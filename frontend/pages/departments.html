@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Departments - CityCare Hospital</title>
+
+    <link rel="stylesheet" href="../src/css/output.css">
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+
+    <!-- TOP BAR -->
+
+    <div class="border-b border-gray-200 bg-white">
+
+        <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-3">
+
+            <div class="hidden items-center gap-8 text-sm text-gray-600 lg:flex">
+
+                <div>📍 123, Health City, Lucknow, UP</div>
+
+                <div>✉ info@citycarehospital.com</div>
+
+                <div>☎ +91 98765 43210</div>
+
+            </div>
+
+            <div class="ml-auto text-right">
+
+                <p class="text-xs font-semibold text-red-600">
+                    Emergency (24/7)
+                </p>
+
+                <p class="text-lg font-bold text-red-600">
+                    +91 98765 43210
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- NAVBAR -->
+
+    <header class="bg-white shadow-sm">
+
+        <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
+
+            <!-- LOGO -->
+
+            <a href="../index.html" class="flex items-center gap-3">
+
+                <div
+                    class="flex h-12 w-12 items-center justify-center rounded-xl bg-blue-600 text-2xl font-bold text-white">
+                    ✚
+                </div>
+
+                <div>
+
+                    <h1 class="text-2xl font-bold leading-none text-blue-700">
+                        CityCare
+                    </h1>
+
+                    <p class="mt-1 text-sm font-semibold tracking-[0.25em] text-gray-700">
+                        HOSPITAL
+                    </p>
+
+                </div>
+
+            </a>
+
+
+            <!-- NAVIGATION -->
+
+            <nav class="hidden items-center gap-7 md:flex">
+
+                <a href="../index.html"
+                    class="font-medium text-gray-700 hover:text-blue-600">
+                    Home
+                </a>
+
+                <a href="./about.html"
+                    class="font-medium text-gray-700 hover:text-blue-600">
+                    About Us
+                </a>
+
+                <a href="./departments.html"
+                    class="font-semibold text-blue-600">
+                    Departments
+                </a>
+
+                <a href="./doctors.html"
+                    class="font-medium text-gray-700 hover:text-blue-600">
+                    Doctors
+                </a>
+
+                <a href="./services.html"
+                    class="font-medium text-gray-700 hover:text-blue-600">
+                    Services
+                </a>
+
+                <a href="./facilities.html"
+                    class="font-medium text-gray-700 hover:text-blue-600">
+                    Facilities
+                </a>
+
+                <a href="./contact.html"
+                    class="font-medium text-gray-700 hover:text-blue-600">
+                    Contact
+                </a>
+
+            </nav>
+
+
+            <a href="./register-patient.html"
+                class="hidden rounded-lg bg-blue-600 px-5 py-3 font-semibold text-white hover:bg-blue-700 md:block">
+                Register Patient
+            </a>
+
+
+            <!-- MOBILE BUTTON -->
+
+            <button id="mobileMenuButton"
+                class="rounded-lg border border-gray-200 p-3 text-xl md:hidden">
+                ☰
+            </button>
+
+        </div>
+
+
+        <!-- MOBILE MENU -->
+
+        <div id="mobileMenu"
+            class="hidden border-t border-gray-200 bg-white px-6 py-5 md:hidden">
+
+            <nav class="flex flex-col gap-4">
+
+                <a href="../index.html">
+                    Home
+                </a>
+
+                <a href="./about.html">
+                    About Us
+                </a>
+
+                <a href="./departments.html"
+                    class="font-semibold text-blue-600">
+                    Departments
+                </a>
+
+                <a href="./doctors.html">
+                    Doctors
+                </a>
+
+                <a href="./services.html">
+                    Services
+                </a>
+
+                <a href="./facilities.html">
+                    Facilities
+                </a>
+
+                <a href="./contact.html">
+                    Contact
+                </a>
+
+                <a href="./register-patient.html"
+                    class="rounded-lg bg-blue-600 px-5 py-3 text-center font-semibold text-white">
+                    Register Patient
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- HERO -->
+
+    <section class="bg-blue-600 px-6 py-16">
+
+        <div class="mx-auto max-w-7xl text-center">
+
+            <span
+                class="inline-block rounded-full bg-blue-500 px-4 py-2 text-sm font-semibold text-white">
+                Medical Departments
+            </span>
+
+            <h1 class="mt-5 text-4xl font-extrabold text-white md:text-5xl">
+                Our Departments
+            </h1>
+
+            <p class="mx-auto mt-4 max-w-2xl text-lg leading-8 text-blue-100">
+                Comprehensive medical care across multiple specialties
+                under one roof.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- DEPARTMENTS -->
+
+    <main class="px-6 py-14">
+
+        <div class="mx-auto max-w-7xl">
+
+
+            <!-- SEARCH -->
+
+            <div
+                class="mb-10 rounded-2xl border border-gray-200 bg-white p-5 shadow-sm">
+
+                <label
+                    for="departmentSearch"
+                    class="mb-2 block text-sm font-semibold text-gray-700">
+
+                    Search Department
+
+                </label>
+
+                <input
+                    id="departmentSearch"
+                    type="text"
+                    placeholder="Search department..."
+                    class="w-full rounded-xl border border-gray-300 px-4 py-3 outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-100">
+
+            </div>
+
+
+            <!-- DEPARTMENT GRID -->
+
+            <div
+                id="departmentGrid"
+                class="grid gap-7 sm:grid-cols-2 lg:grid-cols-3">
+
+
+                <!-- CARDIOLOGY -->
+
+                <div
+                    class="department-card rounded-2xl border border-gray-200 bg-white p-7 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
+                    data-name="cardiology">
+
+                    <div
+                        class="flex h-14 w-14 items-center justify-center rounded-xl bg-red-50 text-3xl">
+                        ❤️
+                    </div>
+
+                    <h2 class="mt-6 text-xl font-bold text-gray-900">
+                        Cardiology
+                    </h2>
+
+                    <p class="mt-3 text-sm leading-6 text-gray-500">
+                        Diagnosis and treatment of heart and
+                        cardiovascular diseases.
+                    </p>
+
+                    <div class="mt-6 border-t border-gray-100 pt-5">
+
+                        <p class="text-sm font-semibold text-gray-700">
+                            Available Specialists
+                        </p>
+
+                        <p class="mt-1 text-sm text-gray-500">
+                            Cardiologists & Cardiac Surgeons
+                        </p>
+
+                    </div>
+
+                    <a href="./doctors.html"
+                        class="mt-6 inline-block font-semibold text-blue-600 hover:text-blue-700">
+                        View Doctors →
+                    </a>
+
+                </div>
+
+
+                <!-- NEUROLOGY -->
+
+                <div
+                    class="department-card rounded-2xl border border-gray-200 bg-white p-7 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
+                    data-name="neurology">
+
+                    <div
+                        class="flex h-14 w-14 items-center justify-center rounded-xl bg-purple-50 text-3xl">
+                        🧠
+                    </div>
+
+                    <h2 class="mt-6 text-xl font-bold text-gray-900">
+                        Neurology
+                    </h2>
+
+                    <p class="mt-3 text-sm leading-6 text-gray-500">
+                        Specialized care for brain, spine and
+                        nervous system disorders.
+                    </p>
+
+                    <div class="mt-6 border-t border-gray-100 pt-5">
+
+                        <p class="text-sm font-semibold text-gray-700">
+                            Available Specialists
+                        </p>
+
+                        <p class="mt-1 text-sm text-gray-500">
+                            Neurologists & Neurosurgeons
+                        </p>
+
+                    </div>
+
+                    <a href="./doctors.html"
+                        class="mt-6 inline-block font-semibold text-blue-600 hover:text-blue-700">
+                        View Doctors →
+                    </a>
+
+                </div>
+
+
+                <!-- ORTHOPEDICS -->
+
+                <div
+                    class="department-card rounded-2xl border border-gray-200 bg-white p-7 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
+                    data-name="orthopedics">
+
+                    <div
+                        class="flex h-14 w-14 items-center justify-center rounded-xl bg-green-50 text-3xl">
+                        🦴
+                    </div>
+
+                    <h2 class="mt-6 text-xl font-bold text-gray-900">
+                        Orthopedics
+                    </h2>
+
+                    <p class="mt-3 text-sm leading-6 text-gray-500">
+                        Treatment of bones, joints, muscles,
+                        ligaments and sports injuries.
+                    </p>
+
+                    <div class="mt-6 border-t border-gray-100 pt-5">
+
+                        <p class="text-sm font-semibold text-gray-700">
+                            Available Specialists
+                        </p>
+
+                        <p class="mt-1 text-sm text-gray-500">
+                            Orthopedic Surgeons
+                        </p>
+
+                    </div>
+
+                    <a href="./doctors.html"
+                        class="mt-6 inline-block font-semibold text-blue-600 hover:text-blue-700">
+                        View Doctors →
+                    </a>
+
+                </div>
+
+
+                <!-- PEDIATRICS -->
+
+                <div
+                    class="department-card rounded-2xl border border-gray-200 bg-white p-7 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
+                    data-name="pediatrics">
+
+                    <div
+                        class="flex h-14 w-14 items-center justify-center rounded-xl bg-pink-50 text-3xl">
+                        👶
+                    </div>
+
+                    <h2 class="mt-6 text-xl font-bold text-gray-900">
+                        Pediatrics
+                    </h2>
+
+                    <p class="mt-3 text-sm leading-6 text-gray-500">
+                        Complete healthcare services for infants,
+                        children and adolescents.
+                    </p>
+
+                    <div class="mt-6 border-t border-gray-100 pt-5">
+
+                        <p class="text-sm font-semibold text-gray-700">
+                            Available Specialists
+                        </p>
+
+                        <p class="mt-1 text-sm text-gray-500">
+                            Pediatricians & Child Specialists
+                        </p>
+
+                    </div>
+
+                    <a href="./doctors.html"
+                        class="mt-6 inline-block font-semibold text-blue-600 hover:text-blue-700">
+                        View Doctors →
+                    </a>
+
+                </div>
+
+
+                <!-- DERMATOLOGY -->
+
+                <div
+                    class="department-card rounded-2xl border border-gray-200 bg-white p-7 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
+                    data-name="dermatology">
+
+                    <div
+                        class="flex h-14 w-14 items-center justify-center rounded-xl bg-orange-50 text-3xl">
+                        🧴
+                    </div>
+
+                    <h2 class="mt-6 text-xl font-bold text-gray-900">
+                        Dermatology
+                    </h2>
+
+                    <p class="mt-3 text-sm leading-6 text-gray-500">
+                        Diagnosis and treatment of skin, hair
+                        and nail conditions.
+                    </p>
+
+                    <div class="mt-6 border-t border-gray-100 pt-5">
+
+                        <p class="text-sm font-semibold text-gray-700">
+                            Available Specialists
+                        </p>
+
+                        <p class="mt-1 text-sm text-gray-500">
+                            Dermatologists
+                        </p>
+
+                    </div>
+
+                    <a href="./doctors.html"
+                        class="mt-6 inline-block font-semibold text-blue-600 hover:text-blue-700">
+                        View Doctors →
+                    </a>
+
+                </div>
+
+
+                <!-- GYNECOLOGY -->
+
+                <div
+                    class="department-card rounded-2xl border border-gray-200 bg-white p-7 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
+                    data-name="gynecology">
+
+                    <div
+                        class="flex h-14 w-14 items-center justify-center rounded-xl bg-rose-50 text-3xl">
+                        🩺
+                    </div>
+
+                    <h2 class="mt-6 text-xl font-bold text-gray-900">
+                        Gynecology
+                    </h2>
+
+                    <p class="mt-3 text-sm leading-6 text-gray-500">
+                        Comprehensive women's healthcare,
+                        pregnancy and reproductive care.
+                    </p>
+
+                    <div class="mt-6 border-t border-gray-100 pt-5">
+
+                        <p class="text-sm font-semibold text-gray-700">
+                            Available Specialists
+                        </p>
+
+                        <p class="mt-1 text-sm text-gray-500">
+                            Gynecologists & Obstetricians
+                        </p>
+
+                    </div>
+
+                    <a href="./doctors.html"
+                        class="mt-6 inline-block font-semibold text-blue-600 hover:text-blue-700">
+                        View Doctors →
+                    </a>
+
+                </div>
+
+
+                <!-- GENERAL MEDICINE -->
+
+                <div
+                    class="department-card rounded-2xl border border-gray-200 bg-white p-7 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
+                    data-name="general medicine">
+
+                    <div
+                        class="flex h-14 w-14 items-center justify-center rounded-xl bg-blue-50 text-3xl">
+                        🩺
+                    </div>
+
+                    <h2 class="mt-6 text-xl font-bold text-gray-900">
+                        General Medicine
+                    </h2>
+
+                    <p class="mt-3 text-sm leading-6 text-gray-500">
+                        Diagnosis and treatment for common and
+                        complex adult health conditions.
+                    </p>
+
+                    <div class="mt-6 border-t border-gray-100 pt-5">
+
+                        <p class="text-sm font-semibold text-gray-700">
+                            Available Specialists
+                        </p>
+
+                        <p class="mt-1 text-sm text-gray-500">
+                            General Physicians
+                        </p>
+
+                    </div>
+
+                    <a href="./doctors.html"
+                        class="mt-6 inline-block font-semibold text-blue-600 hover:text-blue-700">
+                        View Doctors →
+                    </a>
+
+                </div>
+
+
+                <!-- ENT -->
+
+                <div
+                    class="department-card rounded-2xl border border-gray-200 bg-white p-7 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
+                    data-name="ent">
+
+                    <div
+                        class="flex h-14 w-14 items-center justify-center rounded-xl bg-yellow-50 text-3xl">
+                        👂
+                    </div>
+
+                    <h2 class="mt-6 text-xl font-bold text-gray-900">
+                        ENT
+                    </h2>
+
+                    <p class="mt-3 text-sm leading-6 text-gray-500">
+                        Medical and surgical care for ear,
+                        nose and throat conditions.
+                    </p>
+
+                    <div class="mt-6 border-t border-gray-100 pt-5">
+
+                        <p class="text-sm font-semibold text-gray-700">
+                            Available Specialists
+                        </p>
+
+                        <p class="mt-1 text-sm text-gray-500">
+                            ENT Specialists
+                        </p>
+
+                    </div>
+
+                    <a href="./doctors.html"
+                        class="mt-6 inline-block font-semibold text-blue-600 hover:text-blue-700">
+                        View Doctors →
+                    </a>
+
+                </div>
+
+
+                <!-- RADIOLOGY -->
+
+                <div
+                    class="department-card rounded-2xl border border-gray-200 bg-white p-7 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
+                    data-name="radiology">
+
+                    <div
+                        class="flex h-14 w-14 items-center justify-center rounded-xl bg-indigo-50 text-3xl">
+                        🔬
+                    </div>
+
+                    <h2 class="mt-6 text-xl font-bold text-gray-900">
+                        Radiology
+                    </h2>
+
+                    <p class="mt-3 text-sm leading-6 text-gray-500">
+                        Advanced diagnostic imaging including
+                        X-ray, CT scan and ultrasound.
+                    </p>
+
+                    <div class="mt-6 border-t border-gray-100 pt-5">
+
+                        <p class="text-sm font-semibold text-gray-700">
+                            Available Services
+                        </p>
+
+                        <p class="mt-1 text-sm text-gray-500">
+                            X-Ray, CT, MRI & Ultrasound
+                        </p>
+
+                    </div>
+
+                    <a href="./services.html"
+                        class="mt-6 inline-block font-semibold text-blue-600 hover:text-blue-700">
+                        View Services →
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- NO RESULT -->
+
+            <div id="noResults"
+                class="mt-10 hidden rounded-2xl border border-gray-200 bg-white p-10 text-center">
+
+                <div class="text-4xl">
+                    🔍
+                </div>
+
+                <h3 class="mt-4 text-xl font-bold text-gray-900">
+                    No Department Found
+                </h3>
+
+                <p class="mt-2 text-gray-500">
+                    Try searching for another department.
+                </p>
+
+            </div>
+
+
+            <!-- APPOINTMENT CTA -->
+
+            <div
+                class="mt-14 rounded-3xl bg-blue-600 p-8 text-center md:p-12">
+
+                <h2 class="text-3xl font-bold text-white">
+                    Need Medical Assistance?
+                </h2>
+
+                <p class="mx-auto mt-3 max-w-2xl text-blue-100">
+                    Choose a department and book an appointment
+                    with one of our experienced doctors.
+                </p>
+
+                <a href="./appointment.html"
+                    class="mt-7 inline-block rounded-xl bg-white px-7 py-3 font-bold text-blue-600 hover:bg-gray-100">
+                    Book Appointment
+                </a>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer class="bg-gray-900 px-6 py-12 text-white">
+
+        <div class="mx-auto grid max-w-7xl gap-10 md:grid-cols-4">
+
+
+            <div>
+
+                <div class="flex items-center gap-3">
+
+                    <div
+                        class="flex h-11 w-11 items-center justify-center rounded-xl bg-blue-600 text-xl font-bold">
+                        ✚
+                    </div>
+
+                    <div>
+
+                        <h3 class="text-xl font-bold">
+                            CityCare
+                        </h3>
+
+                        <p class="text-xs tracking-[0.2em] text-gray-400">
+                            HOSPITAL
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <p class="mt-5 text-sm leading-7 text-gray-400">
+                    Providing trusted healthcare with experienced doctors,
+                    modern facilities and compassionate patient care.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h3 class="font-bold">
+                    Quick Links
+                </h3>
+
+                <div class="mt-4 flex flex-col gap-3 text-sm text-gray-400">
+
+                    <a href="../index.html" class="hover:text-white">
+                        Home
+                    </a>
+
+                    <a href="./about.html" class="hover:text-white">
+                        About Us
+                    </a>
+
+                    <a href="./departments.html" class="hover:text-white">
+                        Departments
+                    </a>
+
+                    <a href="./doctors.html" class="hover:text-white">
+                        Doctors
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div>
+
+                <h3 class="font-bold">
+                    Patient Services
+                </h3>
+
+                <div class="mt-4 flex flex-col gap-3 text-sm text-gray-400">
+
+                    <a href="./register-patient.html" class="hover:text-white">
+                        Register Patient
+                    </a>
+
+                    <a href="./appointment.html" class="hover:text-white">
+                        Book Appointment
+                    </a>
+
+                    <a href="./services.html" class="hover:text-white">
+                        Medical Services
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div>
+
+                <h3 class="font-bold">
+                    Emergency
+                </h3>
+
+                <p class="mt-4 text-sm text-gray-400">
+                    Available 24 hours a day, 7 days a week.
+                </p>
+
+                <a href="tel:+919876543210"
+                    class="mt-4 inline-block text-lg font-bold text-red-400">
+                    +91 98765 43210
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div
+            class="mx-auto mt-10 max-w-7xl border-t border-gray-800 pt-6 text-center text-sm text-gray-500">
+
+            © 2026 CityCare Hospital. All rights reserved.
+
+        </div>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script>
+
+        // Mobile Menu
+
+        const mobileMenuButton =
+            document.getElementById("mobileMenuButton");
+
+        const mobileMenu =
+            document.getElementById("mobileMenu");
+
+        mobileMenuButton.addEventListener("click", () => {
+
+            mobileMenu.classList.toggle("hidden");
+
+        });
+
+
+        // Department Search
+
+        const departmentSearch =
+            document.getElementById("departmentSearch");
+
+        const departmentCards =
+            document.querySelectorAll(".department-card");
+
+        const noResults =
+            document.getElementById("noResults");
+
+
+        departmentSearch.addEventListener("input", () => {
+
+            const searchValue =
+                departmentSearch.value.toLowerCase().trim();
+
+            let visibleDepartments = 0;
+
+
+            departmentCards.forEach(card => {
+
+                const departmentName =
+                    card.dataset.name.toLowerCase();
+
+
+                if (departmentName.includes(searchValue)) {
+
+                    card.classList.remove("hidden");
+
+                    visibleDepartments++;
+
+                } else {
+
+                    card.classList.add("hidden");
+
+                }
+
+            });
+
+
+            if (visibleDepartments === 0) {
+
+                noResults.classList.remove("hidden");
+
+            } else {
+
+                noResults.classList.add("hidden");
+
+            }
+
+        });
+
+    </script>
+
+</body>
+
+</html>

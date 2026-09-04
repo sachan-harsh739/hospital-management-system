@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lab Management - CityCare Hospital</title>
+<link rel="stylesheet" href="../src/css/output.css">
+<style>
+body{font-family:"Trebuchet MS","Segoe UI",sans-serif;background:#fff;color:#20232a}.top{background:#a90e17;color:#fff;padding:10px 6%;display:flex;justify-content:space-between}.nav{padding:18px 6%;display:flex;justify-content:space-between;align-items:center;box-shadow:0 2px 12px #77101818}.logo{font-size:25px;font-weight:800}.logo span{color:#d91520}.nav a{margin-left:18px;font-weight:700}.hero{background:linear-gradient(110deg,#a90e17,#d91520);color:#fff;padding:28px 6%}.wrap{max-width:1200px;margin:22px auto;padding:0 18px}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:18px}.card,.panel{background:#fff;border-radius:12px;box-shadow:0 5px 22px #6410151c;padding:16px}.card strong{display:block;font-size:25px;color:#a90e17}.card p{font-size:12px;color:#6c727c;margin-top:5px}.panel{margin-top:18px;padding:18px}.form-grid,.filters{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.filters{grid-template-columns:2fr repeat(3,1fr);margin-bottom:12px}.field label{display:block;font-size:12px;font-weight:700;margin-bottom:4px}.field input,.field select,.field textarea,.filters input,.filters select{width:100%;border:1px solid #dfe3e8;border-radius:6px;padding:9px;font:inherit;box-sizing:border-box}.field textarea{height:40px}.wide{grid-column:span 2}.buttons{margin-top:13px}.primary,.table-action{border:0;border-radius:6px;background:#d91520;color:#fff;padding:9px 14px;font-weight:700;cursor:pointer}.message{margin-top:10px;font-size:13px}.error{color:#a90e17}.success{color:#087443}.table-wrap{overflow-x:auto;margin-top:12px}table{width:100%;border-collapse:collapse;font-size:12px}th,td{padding:10px;text-align:left;border-bottom:1px solid #f0d7d8;white-space:nowrap;vertical-align:middle}th{background:#fff4f4;color:#a90e17}.table-action{background:#fff0f0;color:#a90e17;margin-right:4px;padding:6px 10px}.status-select{border:1px solid #dfe3e8;border-radius:5px;padding:5px;font:inherit;background:#fff}.badge{display:inline-block;padding:3px 8px;border-radius:10px;font-size:11px;font-weight:700;line-height:1.4}.badge.requested{background:#fff4e5;color:#a45a00}.badge.sample_collected{background:#eaf1fb;color:#2457a4}.badge.processing{background:#f1e9fb;color:#6d28d9}.badge.completed,.badge-available{background:#eaf8ef;color:#087443}.badge.cancelled{background:#fff0f0;color:#a90e17}.badge-unavailable{background:#f1f3f5;color:#6c727c}.loading-cell{color:#6c727c;text-align:center}.report-preview{max-width:100%;max-height:70vh;display:block;margin:0 auto}.report-iframe{width:100%;height:70vh;border:1px solid #dfe3e8;border-radius:6px}.detail-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.detail-grid div{background:#fff4f4;border-radius:8px;padding:10px}.detail-grid strong{display:block;color:#a90e17;font-size:11px}.detail-grid span{font-size:13px;word-break:break-word}.detail-grid .full{grid-column:span 2}.btn-secondary{background:#fff;color:#a90e17;border:1px solid #f2c8ca;border-radius:6px;padding:9px 14px;font-weight:700;cursor:pointer}.modal{position:fixed;inset:0;background:rgba(40,10,15,.5);display:flex;align-items:center;justify-content:center;padding:20px;z-index:50}.modal-content{background:#fff;border-radius:12px;width:min(720px,96vw);max-height:88vh;display:flex;flex-direction:column;overflow:hidden;box-shadow:0 12px 40px rgba(0,0,0,.25)}.modal-head{display:flex;justify-content:space-between;align-items:center;padding:14px 18px;border-bottom:1px solid #f0d7d8;background:#fff4f4}.modal-head h3{color:#a90e17;font-size:17px}.modal-close{border:0;background:none;font-size:24px;line-height:1;color:#a90e17;cursor:pointer}.modal-body{padding:18px;overflow:auto}.modal-foot{padding:12px 18px;border-top:1px solid #f0d7d8;display:flex;justify-content:flex-end;gap:8px}.hidden{display:none !important}.file-box{border:1px dashed #d9a6aa;border-radius:8px;padding:14px;text-align:center;color:#6c727c;margin-bottom:12px}.file-box input{display:block;margin:10px auto 0;font-size:13px}.nav .active{color:#d91520}@media(max-width:800px){.form-grid,.filters{grid-template-columns:1fr 1fr}.cards{grid-template-columns:repeat(2,1fr)}.nav nav{display:none}}@media(max-width:520px){.form-grid,.filters{grid-template-columns:1fr}.cards{grid-template-columns:1fr}.wide,.detail-grid .full{grid-column:auto}.detail-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="top"><span>CityCare Hospital</span><span>Admin / Laboratory</span></div>
+<header class="nav"><a class="logo" href="../index.html">City<span>Care</span> HOSPITAL</a><nav><a href="./admin-dashboard.html">Dashboard</a><a href="./patient-management.html">Patients</a><a href="./doctor-management.html">Doctors</a><a href="./department-management.html">Departments</a><a href="./appointment-management.html">Appointments</a><a class="active" href="./lab-management.html">Lab</a></nav></header>
+<section class="hero"><h1>Lab Management</h1><p>Request, process and securely manage laboratory reports.</p></section>
+<main class="wrap">
+<section class="cards">
+<div class="card"><strong id="totalLabTests">-</strong><p>Total Tests</p></div>
+<div class="card"><strong id="requestedLabTests">-</strong><p>Pending Tests</p></div>
+<div class="card"><strong id="processingLabTests">-</strong><p>Processing</p></div>
+<div class="card"><strong id="completedLabTests">-</strong><p>Completed</p></div>
+<div class="card"><strong id="cancelledLabTests">-</strong><p>Cancelled</p></div>
+<div class="card"><strong id="uploadedReports">-</strong><p>Reports Uploaded</p></div>
+<section class="panel">
+<h2>Request Lab Test</h2>
+<form id="labTestForm">
+<div class="form-grid">
+<div class="field"><label>Patient ID</label><input name="patientId" placeholder="CC-000001" required></div>
+<div class="field"><label>Consultation ID</label><input name="consultationId" placeholder="Optional"></div>
+<div class="field"><label>Doctor ID</label><input name="doctorId" placeholder="Optional"></div>
+<div class="field"><label>Test Name</label><input name="testName" placeholder="CBC" required></div>
+<div class="field"><label>Test Category</label><input name="testCategory" placeholder="Hematology" required></div>
+<div class="field"><label>Priority</label><select name="priority"><option value="normal">Normal</option><option value="urgent">Urgent</option></select></div>
+<div class="field wide"><label>Instructions</label><textarea name="instructions"></textarea></div>
+</div>
+<div class="buttons"><button class="primary" type="submit">Create Lab Request</button></div>
+</form>
+<p id="labMessage" class="message" role="status"></p>
+</section>
+<section class="panel">
+<h2>Lab Tests</h2>
+<div class="filters">
+<input id="labSearch" placeholder="Search patient ID, patient name, test ID or test name">
+<input id="testDateFilter" type="date" aria-label="Filter by test date">
+<select id="categoryFilter" aria-label="Filter by category"><option value="">All categories</option></select>
+<select id="statusFilter" aria-label="Filter by status"><option value="">All statuses</option><option value="requested">Requested</option><option value="sample_collected">Sample Collected</option><option value="processing">Processing</option><option value="completed">Completed</option><option value="cancelled">Cancelled</option></select>
+</div>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Test ID</th><th>Patient ID</th><th>Patient Name</th><th>Doctor</th><th>Test Name</th><th>Category</th><th>Date</th><th>Status</th><th>Report Status</th><th>Actions</th></tr></thead>
+<tbody id="labRows"></tbody>
+</table>
+</div>
+</section>
+</main>
+
+<!-- Test details modal -->
+<div id="detailModal" class="modal hidden" role="dialog" aria-modal="true" aria-label="Lab test details">
+<div class="modal-content">
+<div class="modal-head"><h3>Lab Test Details</h3><button type="button" class="modal-close" aria-label="Close">×</button></div>
+<div class="modal-body" id="detailBody"></div>
+<div class="modal-foot"><button type="button" class="btn-secondary modal-close">Close</button></div>
+</div>
+</div>
+
+<!-- Upload report modal -->
+<div id="uploadModal" class="modal hidden" role="dialog" aria-modal="true" aria-label="Upload lab report">
+<div class="modal-content">
+<div class="modal-head"><h3 id="uploadModalTitle">Upload Report</h3><button type="button" class="modal-close" aria-label="Close">×</button></div>
+<div class="modal-body">
+<p class="message success">PDF, JPG and PNG up to 10 MB are accepted.</p>
+<form id="uploadForm">
+<input type="hidden" id="uploadTestId" name="testId">
+<div class="file-box"><div id="uploadFileName">No file selected</div><input id="uploadFile" type="file" accept=".pdf,.jpg,.jpeg,.png"></div>
+<div class="buttons"><button class="primary" type="submit">Upload Report</button></div>
+<p id="uploadMessage" class="message"></p>
+</form>
+</div>
+<div class="modal-foot"><button type="button" class="btn-secondary modal-close">Close</button></div>
+</div>
+</div>
+
+<!-- Report preview modal -->
+<div id="reportModal" class="modal hidden" role="dialog" aria-modal="true" aria-label="Report preview">
+<div class="modal-content">
+<div class="modal-head"><h3 id="reportModalTitle">Report</h3><button type="button" class="modal-close" aria-label="Close">×</button></div>
+<div class="modal-body" id="reportModalBody"></div>
+<div class="modal-foot"><button type="button" class="btn-secondary modal-close">Close</button><button type="button" class="primary" id="reportDownload">Download Report</button></div>
+</div>
+</div>
+
+<script src="../src/js/lab-management.js"></script>
+</body>
+</html>
+</section>

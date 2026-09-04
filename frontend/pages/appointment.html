@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Book Appointment - CityCare Hospital</title>
+
+    <link rel="stylesheet" href="../src/css/output.css">
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+
+    <!-- ================= TOP BAR ================= -->
+
+    <div class="border-b border-gray-200 bg-white">
+
+        <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-3">
+
+            <div class="hidden items-center gap-8 text-sm text-gray-600 lg:flex">
+
+                <div>
+                    📍 123, Health City, Lucknow, UP
+                </div>
+
+                <div>
+                    ✉ info@citycarehospital.com
+                </div>
+
+                <div>
+                    ☎ +91 98765 43210
+                </div>
+
+            </div>
+
+            <div class="ml-auto text-right">
+
+                <p class="text-xs font-semibold text-red-600">
+                    Emergency (24/7)
+                </p>
+
+                <p class="text-lg font-bold text-red-600">
+                    +91 98765 43210
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="bg-white shadow-sm">
+
+        <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
+
+
+            <!-- LOGO -->
+
+            <a href="../index.html" class="flex items-center gap-3">
+
+                <div
+                    class="flex h-12 w-12 items-center justify-center rounded-xl bg-blue-600 text-2xl font-bold text-white">
+                    ✚
+                </div>
+
+                <div>
+
+                    <h1 class="text-2xl font-bold leading-none text-blue-700">
+                        CityCare
+                    </h1>
+
+                    <p class="mt-1 text-sm font-semibold tracking-[0.25em] text-gray-700">
+                        HOSPITAL
+                    </p>
+
+                </div>
+
+            </a>
+
+
+            <!-- NAVIGATION -->
+
+            <nav class="hidden items-center gap-7 md:flex">
+
+                <a href="../index.html"
+                    class="font-medium text-gray-700 hover:text-blue-600">
+                    Home
+                </a>
+
+                <a href="./about.html"
+                    class="font-medium text-gray-700 hover:text-blue-600">
+                    About Us
+                </a>
+
+                <a href="./departments.html"
+                    class="font-medium text-gray-700 hover:text-blue-600">
+                    Departments
+                </a>
+
+                <a href="./doctors.html"
+                    class="font-medium text-gray-700 hover:text-blue-600">
+                    Doctors
+                </a>
+
+                <a href="./services.html"
+                    class="font-medium text-gray-700 hover:text-blue-600">
+                    Services
+                </a>
+
+                <a href="./facilities.html"
+                    class="font-medium text-gray-700 hover:text-blue-600">
+                    Facilities
+                </a>
+
+                <a href="./contact.html"
+                    class="font-medium text-gray-700 hover:text-blue-600">
+                    Contact
+                </a>
+
+            </nav>
+
+
+            <a href="./register-patient.html"
+                class="hidden rounded-lg bg-blue-600 px-5 py-3 font-semibold text-white hover:bg-blue-700 md:block">
+                Register Patient
+            </a>
+
+
+            <!-- MOBILE BUTTON -->
+
+            <button id="mobileMenuButton"
+                class="rounded-lg border border-gray-200 p-3 text-xl md:hidden">
+                ☰
+            </button>
+
+        </div>
+
+
+        <!-- MOBILE MENU -->
+
+        <div id="mobileMenu"
+            class="hidden border-t border-gray-200 bg-white px-6 py-5 md:hidden">
+
+            <nav class="flex flex-col gap-4">
+
+                <a href="../index.html">
+                    Home
+                </a>
+
+                <a href="./about.html">
+                    About Us
+                </a>
+
+                <a href="./departments.html">
+                    Departments
+                </a>
+
+                <a href="./doctors.html">
+                    Doctors
+                </a>
+
+                <a href="./services.html">
+                    Services
+                </a>
+
+                <a href="./facilities.html">
+                    Facilities
+                </a>
+
+                <a href="./contact.html">
+                    Contact
+                </a>
+
+                <a href="./register-patient.html"
+                    class="rounded-lg bg-blue-600 px-5 py-3 text-center font-semibold text-white">
+                    Register Patient
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="bg-blue-600 px-6 py-14">
+
+        <div class="mx-auto max-w-7xl">
+
+            <span
+                class="inline-block rounded-full bg-blue-500 px-4 py-2 text-sm font-semibold text-white">
+                Patient Services
+            </span>
+
+            <h1 class="mt-5 text-4xl font-extrabold text-white md:text-5xl">
+                Book an Appointment
+            </h1>
+
+            <p class="mt-4 max-w-2xl text-lg leading-8 text-blue-100">
+                Schedule an appointment with our experienced doctors
+                at a convenient date and time.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="px-6 py-14">
+
+        <div class="mx-auto max-w-5xl">
+
+
+            <!-- INFO -->
+
+            <div
+                class="mb-8 rounded-2xl border border-blue-100 bg-blue-50 p-5">
+
+                <div class="flex gap-4">
+
+                    <div class="text-2xl">
+                        📅
+                    </div>
+
+                    <div>
+
+                        <h3 class="font-bold text-blue-900">
+                            Appointment Information
+                        </h3>
+
+                        <p class="mt-1 text-sm leading-6 text-blue-800">
+                            Please provide accurate information so that
+                            our hospital team can process your appointment.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- FORM CARD -->
+
+            <div
+                class="rounded-3xl border border-gray-200 bg-white p-6 shadow-sm md:p-10">
+
+
+                <!-- HEADER -->
+
+                <div class="border-b border-gray-200 pb-7">
+
+                    <p class="font-semibold text-blue-600">
+                        APPOINTMENT
+                    </p>
+
+                    <h2 class="mt-2 text-2xl font-bold text-gray-900 md:text-3xl">
+                        Schedule Your Visit
+                    </h2>
+
+                    <p class="mt-2 text-sm text-gray-500">
+                        Fields marked with
+                        <span class="text-red-500">*</span>
+                        are required.
+                    </p>
+
+                </div>
+
+
+                <!-- FORM -->
+
+                <form id="appointmentForm" class="mt-8">
+
+
+                    <!-- PATIENT INFORMATION -->
+
+                    <div>
+
+                        <h3 class="text-lg font-bold text-gray-900">
+                            Patient Information
+                        </h3>
+
+                        <p class="mt-1 text-sm text-gray-500">
+                            Enter the patient's contact information.
+                        </p>
+
+                    </div>
+
+
+                    <div class="mt-6 grid gap-6 md:grid-cols-2">
+
+
+                        <!-- PATIENT NAME -->
+
+                        <div>
+
+                            <label
+                                for="patientName"
+                                class="mb-2 block text-sm font-semibold text-gray-700">
+
+                                Patient Name
+                                <span class="text-red-500">*</span>
+
+                            </label>
+
+                            <input
+                                type="text"
+                                id="patientName"
+                                name="patientName"
+                                placeholder="Enter patient's name"
+                                required
+                                class="w-full rounded-xl border border-gray-300 px-4 py-3 outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-100">
+
+                        </div>
+
+
+                        <!-- MOBILE -->
+
+                        <div>
+
+                            <label
+                                for="phone"
+                                class="mb-2 block text-sm font-semibold text-gray-700">
+
+                                Mobile Number
+                                <span class="text-red-500">*</span>
+
+                            </label>
+
+                            <input
+                                type="tel"
+                                id="phone"
+                                name="phone"
+                                maxlength="10"
+                                placeholder="10 digit mobile number"
+                                required
+                                class="w-full rounded-xl border border-gray-300 px-4 py-3 outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-100">
+
+                        </div>
+
+
+                        <!-- EMAIL -->
+
+                        <div class="md:col-span-2">
+
+                            <label
+                                for="email"
+                                class="mb-2 block text-sm font-semibold text-gray-700">
+
+                                Email Address
+
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="patient@example.com"
+                                class="w-full rounded-xl border border-gray-300 px-4 py-3 outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-100">
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- DOCTOR INFORMATION -->
+
+                    <div class="mt-12 border-t border-gray-200 pt-8">
+
+                        <h3 class="text-lg font-bold text-gray-900">
+                            Doctor & Department
+                        </h3>
+
+                        <p class="mt-1 text-sm text-gray-500">
+                            Select the department and doctor you want to visit.
+                        </p>
+
+                    </div>
+
+
+                    <div class="mt-6 grid gap-6 md:grid-cols-2">
+
+
+                        <!-- DEPARTMENT -->
+
+                        <div>
+
+                            <label
+                                for="department"
+                                class="mb-2 block text-sm font-semibold text-gray-700">
+
+                                Department
+                                <span class="text-red-500">*</span>
+
+                            </label>
+
+                            <select
+                                id="department"
+                                name="department"
+                                required
+                                class="w-full rounded-xl border border-gray-300 bg-white px-4 py-3 outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-100">
+
+                                <option value="">
+                                    Select department
+                                </option>
+
+                                <option>
+                                    General Medicine
+                                </option>
+
+                                <option>
+                                    Cardiology
+                                </option>
+
+                                <option>
+                                    Neurology
+                                </option>
+
+                                <option>
+                                    Orthopedics
+                                </option>
+
+                                <option>
+                                    Pediatrics
+                                </option>
+
+                                <option>
+                                    Dermatology
+                                </option>
+
+                                <option>
+                                    Gynecology
+                                </option>
+
+                                <option>
+                                    ENT
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- DOCTOR -->
+
+                        <div>
+
+                            <label
+                                for="doctor"
+                                class="mb-2 block text-sm font-semibold text-gray-700">
+
+                                Doctor
+                                <span class="text-red-500">*</span>
+
+                            </label>
+
+                            <select
+                                id="doctor"
+                                name="doctor"
+                                required
+                                class="w-full rounded-xl border border-gray-300 bg-white px-4 py-3 outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-100">
+
+                                <option value="">
+                                    Select doctor
+                                </option>
+
+                                <option>
+                                    Dr. Amit Sharma
+                                </option>
+
+                                <option>
+                                    Dr. Priya Singh
+                                </option>
+
+                                <option>
+                                    Dr. Rahul Verma
+                                </option>
+
+                                <option>
+                                    Dr. Neha Gupta
+                                </option>
+
+                                <option>
+                                    Dr. Arjun Mehta
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- APPOINTMENT DETAILS -->
+
+                    <div class="mt-12 border-t border-gray-200 pt-8">
+
+                        <h3 class="text-lg font-bold text-gray-900">
+                            Appointment Details
+                        </h3>
+
+                        <p class="mt-1 text-sm text-gray-500">
+                            Select your preferred date and time.
+                        </p>
+
+                    </div>
+
+
+                    <div class="mt-6 grid gap-6 md:grid-cols-2">
+
+
+                        <!-- DATE -->
+
+                        <div>
+
+                            <label
+                                for="appointmentDate"
+                                class="mb-2 block text-sm font-semibold text-gray-700">
+
+                                Appointment Date
+                                <span class="text-red-500">*</span>
+
+                            </label>
+
+                            <input
+                                type="date"
+                                id="appointmentDate"
+                                name="appointmentDate"
+                                required
+                                class="w-full rounded-xl border border-gray-300 px-4 py-3 outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-100">
+
+                        </div>
+
+
+                        <!-- TIME -->
+
+                        <div>
+
+                            <label
+                                for="appointmentTime"
+                                class="mb-2 block text-sm font-semibold text-gray-700">
+
+                                Preferred Time
+                                <span class="text-red-500">*</span>
+
+                            </label>
+
+                            <select
+                                id="appointmentTime"
+                                name="appointmentTime"
+                                required
+                                class="w-full rounded-xl border border-gray-300 bg-white px-4 py-3 outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-100">
+
+                                <option value="">
+                                    Select preferred time
+                                </option>
+
+                                <option>
+                                    09:00 AM
+                                </option>
+
+                                <option>
+                                    10:00 AM
+                                </option>
+
+                                <option>
+                                    11:00 AM
+                                </option>
+
+                                <option>
+                                    12:00 PM
+                                </option>
+
+                                <option>
+                                    02:00 PM
+                                </option>
+
+                                <option>
+                                    03:00 PM
+                                </option>
+
+                                <option>
+                                    04:00 PM
+                                </option>
+
+                                <option>
+                                    05:00 PM
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- REASON -->
+
+                        <div class="md:col-span-2">
+
+                            <label
+                                for="reason"
+                                class="mb-2 block text-sm font-semibold text-gray-700">
+
+                                Reason for Visit
+                                <span class="text-red-500">*</span>
+
+                            </label>
+
+                            <textarea
+                                id="reason"
+                                name="reason"
+                                rows="4"
+                                placeholder="Briefly describe the reason for your visit..."
+                                required
+                                class="w-full resize-none rounded-xl border border-gray-300 px-4 py-3 outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-100"></textarea>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- CONFIRMATION -->
+
+                    <div class="mt-10 border-t border-gray-200 pt-8">
+
+                        <label class="flex items-start gap-3">
+
+                            <input
+                                type="checkbox"
+                                id="agreement"
+                                required
+                                class="mt-1 h-4 w-4 rounded border-gray-300 text-blue-600">
+
+                            <span class="text-sm leading-6 text-gray-600">
+
+                                I confirm that the information provided is
+                                correct and I understand that the appointment
+                                will be confirmed after hospital verification.
+
+                            </span>
+
+                        </label>
+
+                    </div>
+
+
+                    <!-- MESSAGE -->
+
+                    <div
+                        id="formMessage"
+                        class="mt-6 hidden rounded-xl p-4 text-sm font-semibold">
+                    </div>
+
+
+                    <!-- BUTTONS -->
+
+                    <div class="mt-8 flex flex-col gap-4 sm:flex-row">
+
+                        <button
+                            type="submit"
+                            class="rounded-xl bg-blue-600 px-8 py-4 font-bold text-white transition hover:bg-blue-700">
+
+                            Book Appointment
+
+                        </button>
+
+                        <button
+                            type="reset"
+                            class="rounded-xl border border-gray-300 px-8 py-4 font-bold text-gray-700 transition hover:bg-gray-50">
+
+                            Clear Form
+
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+
+            <!-- IMPORTANT INFORMATION -->
+
+            <div class="mt-8 grid gap-6 md:grid-cols-3">
+
+
+                <div
+                    class="rounded-2xl border border-gray-200 bg-white p-6">
+
+                    <div class="text-2xl">
+                        🕐
+                    </div>
+
+                    <h3 class="mt-4 font-bold text-gray-900">
+                        Timely Care
+                    </h3>
+
+                    <p class="mt-2 text-sm leading-6 text-gray-500">
+                        Please arrive 10–15 minutes before your appointment.
+                    </p>
+
+                </div>
+
+
+                <div
+                    class="rounded-2xl border border-gray-200 bg-white p-6">
+
+                    <div class="text-2xl">
+                        📋
+                    </div>
+
+                    <h3 class="mt-4 font-bold text-gray-900">
+                        Bring Documents
+                    </h3>
+
+                    <p class="mt-2 text-sm leading-6 text-gray-500">
+                        Carry your previous medical reports if available.
+                    </p>
+
+                </div>
+
+
+                <div
+                    class="rounded-2xl border border-gray-200 bg-white p-6">
+
+                    <div class="text-2xl">
+                        📞
+                    </div>
+
+                    <h3 class="mt-4 font-bold text-gray-900">
+                        Need Help?
+                    </h3>
+
+                    <p class="mt-2 text-sm leading-6 text-gray-500">
+                        Call our hospital support team at +91 98765 43210.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="bg-gray-900 px-6 py-12 text-white">
+
+        <div class="mx-auto grid max-w-7xl gap-10 md:grid-cols-4">
+
+
+            <div>
+
+                <div class="flex items-center gap-3">
+
+                    <div
+                        class="flex h-11 w-11 items-center justify-center rounded-xl bg-blue-600 text-xl font-bold">
+                        ✚
+                    </div>
+
+                    <div>
+
+                        <h3 class="text-xl font-bold">
+                            CityCare
+                        </h3>
+
+                        <p class="text-xs tracking-[0.2em] text-gray-400">
+                            HOSPITAL
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <p class="mt-5 text-sm leading-7 text-gray-400">
+                    Providing trusted healthcare with experienced doctors,
+                    modern facilities and compassionate patient care.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h3 class="font-bold">
+                    Quick Links
+                </h3>
+
+                <div class="mt-4 flex flex-col gap-3 text-sm text-gray-400">
+
+                    <a href="../index.html" class="hover:text-white">
+                        Home
+                    </a>
+
+                    <a href="./about.html" class="hover:text-white">
+                        About Us
+                    </a>
+
+                    <a href="./departments.html" class="hover:text-white">
+                        Departments
+                    </a>
+
+                    <a href="./doctors.html" class="hover:text-white">
+                        Doctors
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div>
+
+                <h3 class="font-bold">
+                    Patient Services
+                </h3>
+
+                <div class="mt-4 flex flex-col gap-3 text-sm text-gray-400">
+
+                    <a href="./register-patient.html"
+                        class="hover:text-white">
+                        Register Patient
+                    </a>
+
+                    <a href="./appointment.html"
+                        class="hover:text-white">
+                        Book Appointment
+                    </a>
+
+                    <a href="./services.html"
+                        class="hover:text-white">
+                        Medical Services
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div>
+
+                <h3 class="font-bold">
+                    Emergency
+                </h3>
+
+                <p class="mt-4 text-sm text-gray-400">
+                    Available 24 hours a day, 7 days a week.
+                </p>
+
+                <a href="tel:+919876543210"
+                    class="mt-4 inline-block text-lg font-bold text-red-400">
+                    +91 98765 43210
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div
+            class="mx-auto mt-10 max-w-7xl border-t border-gray-800 pt-6 text-center text-sm text-gray-500">
+
+            © 2026 CityCare Hospital. All rights reserved.
+
+        </div>
+
+    </footer>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script src="../src/js/main.js"></script>
+
+    <!--
+
+        const mobileMenuButton =
+            document.getElementById("mobileMenuButton");
+
+        const mobileMenu =
+            document.getElementById("mobileMenu");
+
+        mobileMenuButton.addEventListener("click", () => {
+
+            mobileMenu.classList.toggle("hidden");
+
+        });
+
+
+        // Appointment Form
+
+        const appointmentForm =
+            document.getElementById("appointmentForm");
+
+        const formMessage =
+            document.getElementById("formMessage");
+
+
+        appointmentForm.addEventListener("submit", (event) => {
+
+            event.preventDefault();
+
+            formMessage.className =
+                "mt-6 rounded-xl bg-green-50 p-4 text-sm font-semibold text-green-700";
+
+            formMessage.textContent =
+                "Appointment request submitted successfully. Backend confirmation will be added later.";
+
+            formMessage.scrollIntoView({
+                behavior: "smooth",
+                block: "center"
+            });
+
+        });
+
+
+        appointmentForm.addEventListener("reset", () => {
+
+            setTimeout(() => {
+
+                formMessage.className =
+                    "mt-6 hidden rounded-xl p-4 text-sm font-semibold";
+
+                formMessage.textContent = "";
+
+            }, 50);
+
+        });
+
+
+        // Prevent selecting past dates
+
+        const appointmentDate =
+            document.getElementById("appointmentDate");
+
+        const today =
+            new Date().toISOString().split("T")[0];
+
+        appointmentDate.min = today;
+
+    -->
+
+</body>
+
+</html>
