@@ -51,6 +51,12 @@ function safeReportError(error) {
 const allowedFrontendOrigin = process.env.FRONTEND_ORIGIN || "http://localhost:5500";
 app.use(cors({ origin: (origin, callback) => { if (!origin || origin === allowedFrontendOrigin || origin === "null") return callback(null, true); return callback(new Error("Origin not allowed.")); } }));
 app.use(express.json({ limit: "100kb" }));
+app.get("/", (_req, res) => {
+    return send(res, 200, "CityCare API is running.", {
+        service: "citycare-api",
+        status: "online"
+    });
+});
 
 function patientError(body) {
     const fields = missing(body, ["fullName", "dob", "gender", "mobile", "address", "city", "state", "pincode"]);
