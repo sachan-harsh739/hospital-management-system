@@ -1,4 +1,4 @@
-const doctorApi = "http://localhost:4000/api";
+const doctorApi = "https://hospital-management-system-production-a31b.up.railway.app/api";
 const doctorForm = document.getElementById("doctorForm");
 const doctorRows = document.getElementById("doctorRows");
 const doctorMessage = document.getElementById("doctorMessage");

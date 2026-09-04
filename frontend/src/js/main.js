@@ -5,7 +5,7 @@
 const mobileMenuButton = document.getElementById("mobileMenuButton");
 const mobileMenu = document.getElementById("mobileMenu");
 
-const API_BASE_URL = "http://localhost:4000/api";
+const API_BASE_URL = "https://hospital-management-system-production-a31b.up.railway.app/api";
 
 async function submitToApi(endpoint, payload) {
     const response = await fetch(`${API_BASE_URL}${endpoint}`, {
